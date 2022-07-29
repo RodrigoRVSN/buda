@@ -19,9 +19,3 @@ export const binarySearch = (numbers: number[], number: number) => {
 
   return false
 }
-
-console.log(binarySearch([1, 2, 3, 4, 5], 2))
-
-// Suppose you have a sorted list of 128 names, and you're search through it using binary search, whats the maximum number of steps it would take?
-
-// Suppose you doble the size of the list whats the maximum
