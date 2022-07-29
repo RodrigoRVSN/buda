@@ -1,4 +1,10 @@
-# This is my fucking software engineer personal arsenal
+# This is my fucking Software Engineer personal arsenal
+
+<div align="center">
+  <img height="300" src="./.github/assets/buda.png" alt="Buda BR" />
+</div>
+
+___
 
 ### 🔎 Here we have:
 
@@ -8,6 +14,7 @@
 - _Coming soon..._
 - _Design Patterns_
 - _SOLID_
+- _Others Conceptsj_
 
 ___
 
