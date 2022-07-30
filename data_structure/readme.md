@@ -1,4 +1,4 @@
-# Data Structures
+# 🎲 Data Structures
 
 ## Ways to store data in memory
 - Manage data efficiently
