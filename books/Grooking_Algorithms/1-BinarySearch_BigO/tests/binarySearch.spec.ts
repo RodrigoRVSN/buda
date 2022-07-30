@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { binarySearch } from '../binarySearch'
 
-describe('Chapter 1 - BinarySearch', () => {
+describe('Chapter 1 - Binary Search', () => {
   it('should be able to find the value in the array', () => {
     const numbersList = [1, 2, 3, 4, 5]
     const numberToFind = 3

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { getMaximumSteps } from '../getMaximumSteps'
 
-describe('Chapter 1 - BinarySearch -> Maximum Steps', () => {
+describe('Chapter 1 - Binary Search -> Maximum Steps', () => {
   it('should return 3 if has 8 elements in array', () => {
     expect(getMaximumSteps(8)).toBe(3)
   })
