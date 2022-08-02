@@ -13,3 +13,4 @@ ___
 - Helps the maintenance
 - Help to refactor
 - Help to make a reusable code
+- Less git conflicts
