@@ -12,7 +12,7 @@ def insertionSort(array):
     
     # while preIndex is positive and marked value is lower than the actual value
     while preIndex >= 0 and marked < array[preIndex]:
-      # pass the valeu to the next index, because the value is bigger
+      # pass the value to the next index, because the value is bigger
       array[preIndex + 1] = array[preIndex]
       preIndex -= 1
     

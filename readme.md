@@ -11,10 +11,10 @@ ___
 - 📕 Books
 - 📚️ Data Structures
 - 🤓 Algorithms
+- 👨‍🎨 Design Patterns
+- 🏛 SOLID 
 - _Coming soon..._
-- _Design Patterns_
-- _SOLID_
-- _Others Conceptsj_
+- _Others Concepts_...
 
 ___
 
