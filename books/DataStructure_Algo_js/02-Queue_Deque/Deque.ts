@@ -42,7 +42,7 @@ export class Deque {
   }
 
   dequeueTail () {
-    const value = this.deque[this.count]
+    const value = this.deque[this.count - 1]
     delete this.deque[this.count]
     this.count--
     return value
@@ -53,7 +53,6 @@ export class Deque {
   }
 
   peekTail () {
-    console.log(this.deque, this.count)
     return this.deque[this.count - 1]
   }
 

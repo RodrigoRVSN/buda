@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { Deque } from '../Deque'
+import { palindromeChecker } from '../PalindromeChecker'
 
 describe('Data Structure - Deque', () => {
   it('should be able to manage the Deque using objects', () => {
@@ -23,3 +24,17 @@ describe('Data Structure - Deque', () => {
     expect(deque.getSize()).toBe(1)
   })
 })
+
+
+describe('Data Structure - Deque -> Check Palindrome', () => {
+  it('should be able to inform if a word is a palindrome using deque', () => {
+    expect(palindromeChecker('asa')).toBeTruthy()
+
+    expect(palindromeChecker('oxi')).toBeFalsy()
+
+    expect(palindromeChecker('Was it a car or a cat I saw')).toBeTruthy()
+
+    expect(palindromeChecker('Step on no pets')).toBeTruthy()
+  })
+})
+
