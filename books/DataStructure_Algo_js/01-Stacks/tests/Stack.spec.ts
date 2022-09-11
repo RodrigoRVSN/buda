@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import { Stack } from '../StackObject'
 
-describe('DataStrucutre - Stack', () => {
+describe('Data Structure - Stack', () => {
   it('should be able to manage the Stack using objects', () => {
     const stack = new Stack()
 
