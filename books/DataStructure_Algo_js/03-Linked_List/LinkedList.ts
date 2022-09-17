@@ -96,7 +96,7 @@ export class LinkedList {
     if (!this.head) return undefined
 
     let current = this.head
-    let textHelper = current.element
+    let textHelper = String(current.element)
 
     while (current.next) {
       current = current.next as Node

@@ -4,8 +4,8 @@ export class Node {
   element?: INodeElement
   next: unknown
 
-  constructor (element?: INodeElement) {
+  constructor (element?: INodeElement, next = undefined) {
     this.element = element
-    this.next = undefined
+    this.next = next
   }
 }
