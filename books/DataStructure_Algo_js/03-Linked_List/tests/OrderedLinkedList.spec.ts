@@ -14,5 +14,6 @@ describe('Data Structure - OrderedLinkedList', () => {
     orderedLinkedList.insert(1)
 
     expect(orderedLinkedList.toString()).toBe('1, 2, 5, 6')
+    expect(orderedLinkedList.getSize()).toBe(4)
   })
 })
