@@ -1,4 +1,4 @@
-import { Queue } from "./Queue"
+import { Queue } from './Queue'
 
 export const hotPotato = (elementsList: string[], numberPass: number) => {
   const queue = new Queue()
