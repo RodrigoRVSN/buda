@@ -92,6 +92,10 @@ export class LinkedList {
     return this.removeAt(index)
   }
 
+  getSize () {
+    return this.count
+  }
+
   toString () {
     if (!this.head) return undefined
 
