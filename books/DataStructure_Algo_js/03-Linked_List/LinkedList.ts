@@ -96,6 +96,10 @@ export class LinkedList {
     return this.count
   }
 
+  isEmpty () {
+    return this.getSize() === 0
+  }
+
   toString () {
     if (!this.head) return undefined
 
