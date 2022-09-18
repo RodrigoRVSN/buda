@@ -16,8 +16,6 @@ export class DoublyLinkedList extends LinkedList {
     const node = new DoublyNode(element)
     let current = this.head!
 
-    this.count++
-
     if (index === 0) {
       if (!this.head) {
         this.head = node
@@ -28,6 +26,7 @@ export class DoublyLinkedList extends LinkedList {
         this.head = node
       }
 
+      this.count++
       return
     }
 
@@ -37,6 +36,7 @@ export class DoublyLinkedList extends LinkedList {
       node.prev = current
       this.tail = node
 
+      this.count++
       return
     }
 
@@ -47,12 +47,17 @@ export class DoublyLinkedList extends LinkedList {
     previous.next = node
     current.prev = node
     node.prev = previous
+
+    this.count++
+  }
+
+  push (value: INodeElement) {
+    return this.insert(value, this.count)
   }
 
   removeAt (index: number) {
-    if ((index < 0 && index <= this.count) || !this.head) return undefined
+    if ((index < 0 && index >= this.count) || !this.head) return undefined
 
-    this.count--
     let current = this.head as any
 
     if (index === 0) {
@@ -63,6 +68,7 @@ export class DoublyLinkedList extends LinkedList {
       } else {
         this.head.prev = undefined
       }
+      this.count--
       return
     }
 
@@ -70,6 +76,7 @@ export class DoublyLinkedList extends LinkedList {
       current = this.tail
       this.tail = current.prev as DoublyNode
       this.tail.next = undefined
+      this.count--
       return
     }
 
@@ -77,5 +84,6 @@ export class DoublyLinkedList extends LinkedList {
     const previous = current.prev
     previous.next = current.next
     current.next.prev = previous
+    this.count--
   }
 }

@@ -15,9 +15,9 @@ describe('Data Structure - DoublyLinkedList', () => {
     expect(doublyLinkedList.toString()).toBe('3, 4, 2')
 
     doublyLinkedList.removeAt(1)
-    expect(doublyLinkedList.toString()).toBe('3, 4')
+    expect(doublyLinkedList.toString()).toBe('3, 2')
 
     doublyLinkedList.removeAt(0)
-    expect(doublyLinkedList.toString()).toBe('4')
+    expect(doublyLinkedList.toString()).toBe('2')
   })
 })

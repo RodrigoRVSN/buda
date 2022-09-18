@@ -35,12 +35,12 @@ export class LinkedList {
     if (index < 0 && index <= this.count) return false
 
     const node = new Node(value)
-    this.count++
 
     if (index === 0) {
       const current = this.head
       node.next = current
       this.head = node
+      this.count++
       return
     }
 
@@ -48,14 +48,15 @@ export class LinkedList {
     const current = previous?.next
     node.next = current
     previous.next = node
+    this.count++
   }
 
   getElementAt (index: number) {
-    if ((index < 0 && index <= this.count) || !this.head) return undefined
+    if ((index < 0 && index > this.count) || !this.head) return undefined
 
     let node = this.head
 
-    for (let i = 0; i < index; i++) {
+    for (let i = 0; i < index && node; i++) {
       node = node.next as Node
     }
 
