@@ -12,7 +12,7 @@ describe('Data Structure - Set', () => {
 
     expect(set.size()).toBe(3)
     expect(set.has(3)).toBeTruthy()
-   
+
     set.delete(2)
     expect(set.size()).toBe(2)
     expect(set.has(2)).toBeFalsy()
@@ -30,7 +30,7 @@ describe('Data Structure - Set', () => {
 
     setB.add(1)
     setB.add(3)
-    
+
     expect(setA.union(setB).values()).toStrictEqual([1, 2, 3])
   })
 
@@ -43,7 +43,7 @@ describe('Data Structure - Set', () => {
 
     setB.add(1)
     setB.add(3)
-    
+
     expect(setA.intersection(setB).values()).toStrictEqual([1])
   })
 
@@ -56,7 +56,7 @@ describe('Data Structure - Set', () => {
 
     setB.add(1)
     setB.add(3)
-    
+
     expect(setA.difference(setB).values()).toStrictEqual([2])
   })
 
@@ -70,7 +70,7 @@ describe('Data Structure - Set', () => {
     setB.add(1)
     setB.add(2)
     setB.add(3)
-    
+
     expect(setA.isSubsetOf(setB)).toBeTruthy()
   })
 })

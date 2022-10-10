@@ -1,4 +1,4 @@
-type IValue = number | string 
+type IValue = number | string
 
 interface IItems {
   [key: IValue]: IValue
@@ -12,11 +12,9 @@ export class Set {
   }
 
   add (element: IValue) {
-    if(!this.items[element]) {
+    if (!this.items[element]) {
       this.items[element] = element
     }
-
-    return
   }
 
   delete (element: IValue) {
@@ -47,7 +45,7 @@ export class Set {
   }
 
   intersection (setB: Set) {
-    const helperSet = new Set() 
+    const helperSet = new Set()
     const values = this.values()
     const otherValues = setB.values()
 
@@ -69,7 +67,7 @@ export class Set {
   }
 
   difference (setB: Set) {
-    const helperSet = new Set() 
+    const helperSet = new Set()
 
     this.values().forEach(value => {
       if (!setB.has(value)) {
@@ -84,7 +82,7 @@ export class Set {
     if (this.size() > setB.size()) return false
 
     let isSubset = true
-    
+
     this.values().every(item => {
       if (!setB.has(item)) {
         isSubset = false
