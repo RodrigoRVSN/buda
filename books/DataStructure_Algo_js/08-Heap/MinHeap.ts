@@ -35,7 +35,7 @@ export class MinHeap {
   siftUp (index: number) {
     let parent = this.getParentIndex(index)!
 
-    while (index > 0 && this.compareFn(this.heap[parent], this.heap[index]) > Compare.BIGGER_THAN) {
+    while (index > 0 && this.compareFn(this.heap[parent], this.heap[index]) === Compare.BIGGER_THAN) {
       swap(this.heap, parent, index)
       index = parent
       parent = this.getParentIndex(index)!
@@ -70,11 +70,11 @@ export class MinHeap {
     const right = this.getLeftIndex(index)
     const size = this.size()
 
-    if (left < size && this.compareFn(this.heap[element], this.heap[left]) > Compare.BIGGER_THAN) {
+    if (left < size && this.compareFn(this.heap[element], this.heap[left]) === Compare.BIGGER_THAN) {
       element = left
     }
 
-    if (right < size && this.compareFn(this.heap[element], this.heap[right]) > Compare.BIGGER_THAN) {
+    if (right < size && this.compareFn(this.heap[element], this.heap[right]) === Compare.BIGGER_THAN) {
       element = right
     }
 
