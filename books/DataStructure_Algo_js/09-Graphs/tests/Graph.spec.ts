@@ -1,7 +1,8 @@
 import { describe, it, expect } from 'vitest'
+import { breadFirstSearch } from '../BFS'
+import { deepFirstSearch } from '../deepFirstSearch'
+import { dijkstra } from '../dijkstra'
 import { Graph } from '../Graph'
-import { breadFirstSearch } from '../helpers/breadFirstSearch'
-import { deepFirstSearch } from '../helpers/deepFirstSearch'
 
 describe('Data Structure - Graph', () => {
   it('should be able to manipulate a Graph', () => {
@@ -36,5 +37,18 @@ describe('Data Structure - Graph', () => {
     deepFirstSearch(graph, pushDeep)
 
     expect(deepValues).toStrictEqual(['A', 'B', 'E', 'I', 'F', 'C', 'D', 'G', 'H'])
+  })
+
+  it('should be able to see the shortest paths to each vertex using dijsktra algorithm', () => {
+    const graph = [
+      [0, 2, 4, 0, 0, 0],
+      [0, 0, 2, 4, 2, 0],
+      [0, 0, 0, 0, 3, 0],
+      [0, 0, 0, 0, 0, 2],
+      [0, 0, 0, 3, 0, 2],
+      [0, 0, 0, 0, 0, 0]
+    ]
+
+    expect(dijkstra(graph, 0)).toStrictEqual([0, 2, 4, 6, 4, 6])
   })
 })

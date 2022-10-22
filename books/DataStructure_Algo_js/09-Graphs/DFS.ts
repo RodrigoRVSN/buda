@@ -1,6 +1,6 @@
-import { Dictionary } from '../../05-Dictionary_Hash/Dictionary'
-import { Graph } from '../Graph'
-import { Colors, IColor, initializeColors } from './initializeColors'
+import { Dictionary } from '../05-Dictionary_Hash/Dictionary'
+import { Graph } from './Graph'
+import { Colors, IColor, initializeColors } from './helpers/initializeColors'
 
 type IFinished = { [key: string]: number }
 type IDiscovery = { [key: string]: number }

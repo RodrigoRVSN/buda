@@ -1,6 +1,6 @@
-import { Queue } from '../../02-Queue_Deque/Queue'
-import { Graph } from '../Graph'
-import { Colors, initializeColors } from './initializeColors'
+import { Queue } from '../02-Queue_Deque/Queue'
+import { Graph } from './Graph'
+import { Colors, initializeColors } from './helpers/initializeColors'
 
 type IDistance = { [key: string]: number }
 type IPredecessor = { [key: string]: string | null }

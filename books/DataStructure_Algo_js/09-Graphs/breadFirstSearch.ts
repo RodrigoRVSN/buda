@@ -1,6 +1,6 @@
-import { Queue } from '../../02-Queue_Deque/Queue'
-import { Graph } from '../Graph'
-import { Colors, initializeColors } from './initializeColors'
+import { Queue } from '../02-Queue_Deque/Queue'
+import { Graph } from './Graph'
+import { Colors, initializeColors } from './helpers/initializeColors'
 
 export const breadFirstSearch = (graph: Graph, startVertex: string, callback: Function) => {
   const vertices = graph.getVertices()
