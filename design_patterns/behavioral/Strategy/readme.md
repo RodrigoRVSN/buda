@@ -3,6 +3,7 @@
 ## What is?
 
 - With this pattern we define families of algorithms and make them interchangeable.
+- Code closed to modification and open to expansion
 
 ___
 
