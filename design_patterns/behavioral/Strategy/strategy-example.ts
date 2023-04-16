@@ -1,80 +1,43 @@
-/**
- * The Context defines the interface of interest to clients.
- */
- class Context {
-  /**
-   * @type {Strategy} The Context maintains a reference to one of the Strategy
-   * objects. The Context does not know the concrete class of a strategy. It
-   * should work with all strategies via the Strategy interface.
-   */
-  private strategy: Strategy;
+interface AnimalStrategy {
+  saySomething(): string;
+}
 
-  /**
-   * Usually, the Context accepts a strategy through the constructor, but also
-   * provides a setter to change it at runtime.
-   */
-  constructor(strategy: Strategy) {
-      this.strategy = strategy;
+class Animal {
+  // Mantem uma referencia do tipo AnimalStrategy, mas nao conhece a classe concreta da classe AnimalStrategy
+  private strategy: AnimalStrategy;
+
+  // Define a estrategia via construtor e no tempo de execucao
+  constructor(strategy: AnimalStrategy) {
+    this.strategy = strategy;
   }
 
-  /**
-   * Usually, the Context allows replacing a Strategy object at runtime.
-   */
-  public setStrategy(strategy: Strategy) {
-      this.strategy = strategy;
+  // Permite alterar a estrategia em tempo de execucao
+  public setStrategy(strategy: AnimalStrategy) {
+    this.strategy = strategy;
   }
 
-  /**
-   * The Context delegates some work to the Strategy object instead of
-   * implementing multiple versions of the algorithm on its own.
-   */
-  public doSomeBusinessLogic(): void {
-      // ...
-
-      console.log('Context: Sorting data using the strategy (not sure how it\'ll do it)');
-      const result = this.strategy.doAlgorithm(['a', 'b', 'c', 'd', 'e']);
-      console.log(result.join(','));
-
-      // ...
+  // A classe Animal delega para a strategy a implementacao do metodo
+  public giveAHello(): string {
+    return this.strategy.saySomething();
   }
 }
 
-/**
-* The Strategy interface declares operations common to all supported versions
-* of some algorithm.
-*
-* The Context uses this interface to call the algorithm defined by Concrete
-* Strategies.
-*/
-interface Strategy {
-  doAlgorithm(data: string[]): string[];
-}
-
-/**
-* Concrete Strategies implement the algorithm while following the base Strategy
-* interface. The interface makes them interchangeable in the Context.
-*/
-class ConcreteStrategyA implements Strategy {
-  public doAlgorithm(data: string[]): string[] {
-      return data.sort();
+// Classes implementando o AnimalStrategy para definir o comportamento que a classe ira utilizar
+class Dog implements AnimalStrategy {
+  public saySomething(): string {
+    return "Au au";
   }
 }
 
-class ConcreteStrategyB implements Strategy {
-  public doAlgorithm(data: string[]): string[] {
-      return data.reverse();
+class Cat implements AnimalStrategy {
+  public saySomething(): string {
+    return "Meow";
   }
 }
 
-/**
-* The client code picks a concrete strategy and passes it to the context. The
-* client should be aware of the differences between strategies in order to make
-* the right choice.
-*/
-const context = new Context(new ConcreteStrategyA());
-console.log('Client: Strategy is set to normal sorting.');
-context.doSomeBusinessLogic();
+// Define a Strategy e muda em tempo de execucao
+const context = new Animal(new Dog());
+console.log('Animal Strategy is a Dog: ', context.giveAHello());
 
-console.log('\nClient: Strategy is set to reverse sorting.');
-context.setStrategy(new ConcreteStrategyB());
-context.doSomeBusinessLogic();
+context.setStrategy(new Cat());
+console.log('Animal Strategy is a Cat: ', context.giveAHello());
