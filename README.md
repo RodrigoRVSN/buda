@@ -13,8 +13,7 @@ ___
 - 🤓 Algorithms
 - 👨‍🎨 Design Patterns
 - 🏛 SOLID 
-- _Coming soon..._
-- _Others Concepts_...
+- 🤔 Concepts
 
 ___
 
@@ -22,6 +21,7 @@ ___
 
 - Typescript 
 - Vitest
-- Bun
 - Python
+- Java
+- Golang
 - TDD
