@@ -14,21 +14,21 @@ public class Facture {
 	}
 
 	public double calculateTotal() {
-    double price = ((book.price - book.price * percDiscount) * this.quantity);
+		double price = ((book.price - book.price * percDiscount) * this.quantity);
 		double taxPrice = price * (1 + percTax);
 		return taxPrice;
 	}
 
-  // Print facture should not be the Facture class responsability!
+	// Print facture should not be the Facture class responsability!
 	public void printFacture() {
-    System.out.println(quantity + "x " + book.nome + " " + book.price + "$");
-    System.out.println("Discount percentage: " + percDiscount);
-    System.out.println("Tax percentage: " + percTax);
-    System.out.println("Total: " + total);
+		System.out.println(quantity + "x " + book.nome + " " + book.price + "$");
+		System.out.println("Discount percentage: " + percDiscount);
+		System.out.println("Tax percentage: " + percTax);
+		System.out.println("Total: " + total);
 	}
 
-  // Save facture should not be the Facture class responsability!
-  public void salveToFile(String nomeArquivo) {
-    // bla bla bla
+	// Save facture should not be the Facture class responsability!
+	public void salveToFile(String nomeArquivo) {
+		// bla bla bla
 	}
 }

@@ -31,8 +31,7 @@ class InventoryRequesterV2 {
   }
 }
 
-// Constructing our dependencies externally and injecting them, we can easily
-// substitute our request module for another
+/* // ! Constructing our dependencies externally and injecting them, we can easily substitute our request module for another */
 const inventoryTracker = new InventoryTracker(
   ["apples", "bananas"],
   new InventoryRequesterV2()
