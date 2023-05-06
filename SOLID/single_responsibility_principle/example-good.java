@@ -1,10 +1,9 @@
 // Print Facture now have his own class and responsability!
-
 public class PrintFacture {
-  private Facture facture
+  private Facture facture;
 
   public PrintFacture(Facture facture) {
-    this.facture = facture
+    this.facture = facture;
   }
 
   public void printFacture() {
@@ -12,11 +11,10 @@ public class PrintFacture {
     System.out.println("Discount percentage: " + percDiscount);
     System.out.println("Tax percentage: " + percTax);
     System.out.println("Total: " + total);
-	}
+  }
 }
 
 // Save Facture now have his own class and responsability!
-
 public class SaveFacture {
   Facture facture;
 
@@ -26,5 +24,5 @@ public class SaveFacture {
 
   public void saveToFile(String filename) {
     // bla bla bla
-	}
+  }
 }

@@ -3,7 +3,7 @@ interface Birds {
     public function render();
 }
 
-/* Here we're implementing a specific class to be used by birds who fly */
+/* // ! Here we're implementing a specific class to be used by birds who fly */
 interface BirdsFly extends Birds {
     public function setAltitude($altitude);
 }

@@ -1,4 +1,4 @@
-# Single Responsibility Principle (SRP)
+# Liskov Substitution Principle (LSP)
 
 ## What is this?
 

@@ -3,26 +3,26 @@ interface AnimalStrategy {
 }
 
 class Animal {
-  // Mantem uma referencia do tipo AnimalStrategy, mas nao conhece a classe concreta da classe AnimalStrategy
+  // Keep a reference to the AnimalStrategy, but don't know the concrete class of the AnimalStrategy
   private strategy: AnimalStrategy;
 
-  // Define a estrategia via construtor e no tempo de execucao
+  // Define strategy in constructor
   constructor(strategy: AnimalStrategy) {
     this.strategy = strategy;
   }
 
-  // Permite alterar a estrategia em tempo de execucao
+  // Let to change the strategy in runtime
   public setStrategy(strategy: AnimalStrategy) {
     this.strategy = strategy;
   }
 
-  // A classe Animal delega para a strategy a implementacao do metodo
+  // The Animal class use the strategy to implement the method
   public giveAHello(): string {
     return this.strategy.saySomething();
   }
 }
 
-// Classes implementando o AnimalStrategy para definir o comportamento que a classe ira utilizar
+// Classes implementing the AnimalStrategy to define the behavior that the class will use
 class Dog implements AnimalStrategy {
   public saySomething(): string {
     return "Au au";
@@ -35,7 +35,7 @@ class Cat implements AnimalStrategy {
   }
 }
 
-// Define a Strategy e muda em tempo de execucao
+// Define a strategy and keep it in runtime
 const context = new Animal(new Dog());
 console.log('Animal Strategy is a Dog: ', context.giveAHello());
 
