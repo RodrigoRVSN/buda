@@ -1,7 +1,7 @@
 # This is my fucking Software Engineer personal arsenal
 
 <div align="center">
-  <img height="300" src="./.github/assets/buda.png" alt="Buda BR" />
+  <img height="300" src="./_assets/buda.png" alt="Buda BR" />
 </div>
 
 ___
