@@ -1,7 +1,7 @@
 - [Home](/)
 - [SOLID](/SOLID/)
 	- [Dependency Inversion Principle](/SOLID/dependency_inversion_principle/)
-	- [Inteface Segregation Principle](/SOLID/inteface_segregation_principle/)
+	- [Interface Segregation Principle](/SOLID/interface_segregation_principle/)
 	- [Liskov Substitution Principle](/SOLID/liskov_substitution_principle/)
 	- [Open Closed Principle](/SOLID/open_closed_principle/)
 	- [Single Responsibility Principle](/SOLID/single_responsibility_principle/)
