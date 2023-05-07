@@ -1,14 +1,40 @@
 - [Home](/)
-
 - [SOLID](/SOLID/)
-
-- [Data Structure](/data_structure/)
-
-- Concepts
-  - [TDD](/concepts/TDD/)
-  - [DDD](/concepts/DDD/)
-
+	- [Dependency Inversion Principle](/SOLID/dependency_inversion_principle/)
+	- [Inteface Segregation Principle](/SOLID/inteface_segregation_principle/)
+	- [Liskov Substitution Principle](/SOLID/liskov_substitution_principle/)
+	- [Open Closed Principle](/SOLID/open_closed_principle/)
+	- [Single Responsibility Principle](/SOLID/single_responsibility_principle/)
 - [Books](/books/)
-  - [Grooking Algorithms](/books/Grooking_Algorithms/)
-
+	- Grooking Algorithms
+		- [10 K Nearest Neighbors](/books/grooking_algorithms/10-K-nearest-neighbors/)
+		- [11 Next Steps](/books/grooking_algorithms/11-Next-steps/)
+		- [2 Array Linked List](/books/grooking_algorithms/2-Array_Linked-list/)
+		- [3 Recursion Call Stack](/books/grooking_algorithms/3-Recursion_Call-stack/)
+		- [4 D&C Quick Sort](/books/grooking_algorithms/4-D&C_Quick-sort/)
+		- [5 Hash Tables](/books/grooking_algorithms/5-Hash-Tables/)
+		- [6 Bread First Search](/books/grooking_algorithms/6-Bread-First-Search/)
+		- [7 Dijkstra](/books/grooking_algorithms/7-Dijkstra/)
+		- [8 NP Complete](/books/grooking_algorithms/8-NP-Complete/)
+		- [9 Dynamic Programming](/books/grooking_algorithms/9-Dynamic-Programming/)
+- Concepts
+	- [DDD](/concepts/DDD/)
+	- [TDD](/concepts/TDD/)
+- [Data Structure](/data_structure/)
+	- [Big O](/data_structure/big-o/)
+	- [Graphs](/data_structure/graphs/)
+	- [Lists](/data_structure/lists/)
+	- [Queues](/data_structure/queues/)
+	- [Stack](/data_structure/stack/)
+	- [Trees](/data_structure/trees/)
 - [Design Patterns](/design_patterns/)
+	- Behavioral
+		- [Observer](/design_patterns/behavioral/Observer/)
+		- [Strategy](/design_patterns/behavioral/Strategy/)
+	- Creational
+		- [Factory](/design_patterns/creational/Factory/)
+		- [Singleton](/design_patterns/creational/Singleton/)
+	- Structural
+		- [Adapter](/design_patterns/structural/Adapter/)
+		- [Brigde](/design_patterns/structural/Brigde/)
+		- [Facade](/design_patterns/structural/Facade/)

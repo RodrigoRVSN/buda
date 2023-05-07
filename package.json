@@ -2,6 +2,11 @@
   "name": "buda",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:cov": "vitest run --coverage",
+    "gen:sidebar": " node _scripts/generateSidebar.js"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
@@ -14,9 +19,6 @@
     "typescript": "^4.7.4",
     "vitest": "^0.19.1"
   },
-  "license": "MIT",
-  "scripts": {
-    "test": "vitest",
-    "test:cov": "vitest run --coverage"
-  }
+  "type": "module",
+  "license": "MIT"
 }
