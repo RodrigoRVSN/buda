@@ -1,20 +1,20 @@
 import fs from 'fs';
 import path from 'path';
 
-function capitalizeFirstLetter(string) {
-  const stringSanitazed = string.replace(/[_-]/g, ' ');
-  return stringSanitazed.replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
-}
+const capitalizeFirstLetter = (string) => {
+  const sanitizedString = string.replace(/[_-]/g, ' ');
+  return sanitizedString.replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
+};
 
-function hasReadme(directory) {
+const hasReadme = (directory) => {
   const files = fs.readdirSync(directory);
   return files.includes('README.md');
-}
+};
 
-function generateSidebar(directory, prefix = '', subDirLevel = 0) {
+const generateSidebar = (directory, prefix = '', subDirLevel = 0) => {
   let sidebarContent = '';
 
-  const files = fs.readdirSync(directory)
+  const files = fs.readdirSync(directory);
 
   files.forEach((file) => {
     const filePath = path.join(directory, file);
@@ -31,17 +31,15 @@ function generateSidebar(directory, prefix = '', subDirLevel = 0) {
         sidebarContent += `${subItems}`;
       }
     } else if (file === 'README.md') {
-      const splittedPrefix = prefix.split('/');
-      const fileName = splittedPrefix[splittedPrefix.length - 1];
+      const fileName = path.basename(prefix);
       const title = prefix === '' ? 'Home' : capitalizeFirstLetter(fileName);
 
       sidebarContent += `- [${title}](${prefix}/)\n`;
     }
   });
 
-
   return sidebarContent;
-}
+};
 
 const sidebar = generateSidebar('./');
 
