@@ -19,6 +19,7 @@
 		- [9 Dynamic Programming](/books/grooking_algorithms/9-Dynamic-Programming/)
 - Concepts
 	- [DDD](/concepts/DDD/)
+	- [Database](/concepts/Database/)
 	- [TDD](/concepts/TDD/)
 - [Data Structure](/data_structure/)
 	- [Big O](/data_structure/big-o/)

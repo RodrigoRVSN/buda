@@ -25,3 +25,10 @@ ___
 - Java
 - Golang
 - TDD
+
+___
+
+🚀 How to run:
+
+- Install [docsify](https://docsify.js.org/#/?id=docsify)
+- Run `docsify serve` or `yarn dev`
