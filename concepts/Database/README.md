@@ -23,4 +23,23 @@ Foreign keys in a table must have corresponding primary keys in the referenced t
 
 Microsoft SQL Server, Oracle, PostgreSQL, SQLite, MySQL, Maria DB.
 
-## Non relational
+## Non-Relational
+
+Aka NoSQL databases, are a type of database flexible to storing and retrieving data. Unlike relational database, they don't have predefined relationships and fixed table structures.
+
+Instead of using tables, non-relational databases use various data models, such as key-value pairs, documents, graphs, or column families, to organize and represent data.
+
+### Advantages
+
+`Flexibility`: they have flexibility in data modeling, allowing developers to store and retrieve data in a way that best suits the application needs. 
+
+### Types of non-relational databases
+
+- `Document data stores`: JSON-like documents structured.
+- `Columnar data stores`: Organized in columns, similar to relational database.
+- `Key-Value Stores`: These databases store data as key-value pairs, making them ideal for caching, session management, and simple data storage and retrieval.
+- `Graph Databases`: They excel at storing and querying highly interconnected data, making them suitable for applications involving social networks, recommendation engines, and complex relationships.
+
+### Examples
+
+MongoDB, Apache Cassandra, Redis, DynamoDB, Couchbase.
