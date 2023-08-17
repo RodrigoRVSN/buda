@@ -30,6 +30,7 @@
 	- [Trees](/data_structure/trees/)
 - [Design Patterns](/design_patterns/)
 	- Behavioral
+		- [Command](/design_patterns/behavioral/Command/)
 		- [Observer](/design_patterns/behavioral/Observer/)
 		- [Strategy](/design_patterns/behavioral/Strategy/)
 	- Creational
