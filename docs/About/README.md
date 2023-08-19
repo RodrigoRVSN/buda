@@ -1,10 +1,4 @@
-# This is my fucking Software Engineer personal arsenal
-
-<div align="center">
-  <img height="300" src="./static/img/buda.png" alt="Buda BR" />
-</div>
-
-___
+# About
 
 ### 🔎 Here we have:
 
