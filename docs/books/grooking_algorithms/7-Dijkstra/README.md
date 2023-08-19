@@ -1,6 +1,4 @@
-# Summary
-
-## Dijkstra
+# Dijkstra
 
 - Breadth First Search is used to calculate the shortest path on a unweighted graph
 - Dijkstra's algorithm is used to calculate the shortest path on a weighted graph

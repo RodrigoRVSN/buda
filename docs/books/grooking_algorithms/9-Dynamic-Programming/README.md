@@ -1,6 +1,4 @@
-# Summary
-
-## Dynamic Programming
+# Dynamic Programming
 
 - Optimize something given a constraint
 - You can use this method when the problem can be broke in discrete subproblems

@@ -1,8 +1,4 @@
-# Summary
-
-## Hash Table
-
-___
+# Hash Tables
 
 ### What hash tables are good for?
 

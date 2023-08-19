@@ -1,6 +1,4 @@
-# Summary
-
-## K-nearest neighbors
+# K-nearest neighbors
 
 - KNN is used for classification and regression, and involves looking at the k-nearest neighbors
 - Classification = Categorization into a group

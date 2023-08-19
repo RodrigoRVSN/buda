@@ -1,4 +1,4 @@
-# Summary
+# Array Linked List
 
 - When you want to store multiples elements, use and array or a list
 - In a array, the elements are stored next to each other

@@ -1,6 +1,4 @@
-# Summary
-
-## Recursion
+# Recursion
 
 - The function calls itself
 - Every recursive function has a **base case** and a **recursive case**.

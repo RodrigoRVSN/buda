@@ -10,7 +10,9 @@ When a unique identifier, known as a `primary key (PK)`, is used in another tabl
 The connections between primary and foreign keys create relationships between tables, allowing for efficient data retrieval and manipulation.
 
 <div align="center">
-  <img src="./relational-database-illustration.png" />
+
+![Relational database illustration example](relational-database-illustration.png)
+
 </div>
 
 ### Advantages

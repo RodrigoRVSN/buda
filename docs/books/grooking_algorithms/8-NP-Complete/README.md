@@ -1,6 +1,4 @@
-# Summary
-
-## NP Complete
+# NP Complete
 
 - NP complete problems doesnt have known fast solutions
 - Greedy algorithms optimize locally, to optimize globally.

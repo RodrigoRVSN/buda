@@ -1,6 +1,4 @@
-# Summary
-
-## Bread First Search
+# Bread First Search
 
 - Queues are FIFO (First In First Out)
 - Stacks are LIFO (Last In First Out)

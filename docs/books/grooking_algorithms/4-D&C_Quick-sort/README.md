@@ -1,6 +1,4 @@
-# Summary
-
-## D&C (Divide & Conquer)
+# D&C (Divide & Conquer)
 
 - D&C is used breaking a problem into smaller pieces
 - The base case is probably an empty array or an array with 1 element

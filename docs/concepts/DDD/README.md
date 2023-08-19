@@ -5,7 +5,9 @@
 ___
 
 <div align="center">
-  <img src="./ddd-illustration.png" height="300px" />
+
+![DDD ilustration](ddd-illustration.png)
+
 </div>
 
 ___
