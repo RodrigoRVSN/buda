@@ -6,12 +6,11 @@ const navbarConfig = require('./config/navbarConfig')
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Buda',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'My content arsenal',
   favicon: 'img/buda.png',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://rodrigorvsn.github.io',
+  baseUrl: '/buda/',
 
   organizationName: 'RodrigoRVSN',
   projectName: 'buda',
