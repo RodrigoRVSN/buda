@@ -1,4 +1,4 @@
-# Singleton
+# Factory
 
 ## What is?
 

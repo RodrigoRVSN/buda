@@ -39,5 +39,5 @@ yarn
 - Run the application
 
 ```bash
-yarn dev
+yarn start
 ```

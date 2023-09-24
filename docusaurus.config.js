@@ -5,8 +5,8 @@ const navbarConfig = require('./config/navbarConfig')
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Buda',
-  tagline: 'My content arsenal',
+  title: 'Rodrigo Victor',
+  tagline: 'My content arsenal, where I put my software engineering notes',
   favicon: 'img/buda.png',
 
   url: 'https://rodrigorvsn.github.io',

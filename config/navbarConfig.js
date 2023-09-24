@@ -9,7 +9,7 @@ module.exports = {
       type: 'docSidebar',
       sidebarId: 'tutorialSidebar',
       position: 'left',
-      label: 'Docs'
+      label: 'Content'
     },
     {
       href: 'https://github.com/RodrigoRVSN/buda',

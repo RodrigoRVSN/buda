@@ -2,32 +2,22 @@ module.exports = {
   style: 'dark',
   links: [
     {
-      title: 'Docs',
+      title: 'Social',
       items: [
         {
-          label: 'Tutorial',
-          to: '.'
-        }
-      ]
-    },
-    {
-      title: 'Community',
-      items: [
+          label: 'GitHub',
+          href: 'https://github.com/RodrigoRVSN'
+        },
+        {
+          label: 'Linkedin',
+          href: 'https://linkedin.com/in/rodrigorvsn'
+        },
         {
           label: 'Twitter',
           href: 'https://twitter.com/rodrigorvsn'
         }
       ]
-    },
-    {
-      title: 'More',
-      items: [
-        {
-          label: 'GitHub',
-          href: 'https://github.com/RodrigoRVSN'
-        }
-      ]
     }
   ],
-  copyright: `Copyright © ${new Date().getFullYear()} Buda, Inc. Built with Docusaurus.`
+  copyright: `Copyright © ${new Date().getFullYear()} Rodrigo Victor`
 }
