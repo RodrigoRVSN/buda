@@ -2,16 +2,15 @@
 
 ## What is this?
 
-- This principle say: 
+This principle says: 
   
-`A class should do just one thing, and should have just one motive to be changed`
+> A module should have one, and just one reason to be changed
 
 ___
 
-## Why?
+## Why use this ?
 
 - Helps the maintenance
-- Help to refactor
 - Help to make a reusable code
 - Less git conflicts
 
@@ -19,7 +18,7 @@ ___
 
 ### Bad example
 
-```js
+```java
 public class Facture {
 	private Book book;
 	private int quantity;
@@ -43,22 +42,19 @@ public class Facture {
 
 	// Print facture should not be the Facture class responsability!
 	public void printFacture() {
-		System.out.println(quantity + "x " + book.nome + " " + book.price + "$");
-		System.out.println("Discount percentage: " + percDiscount);
-		System.out.println("Tax percentage: " + percTax);
-		System.out.println("Total: " + total);
+		// do something to print the facture
 	}
 
 	// Save facture should not be the Facture class responsability!
-	public void salveToFile(String nomeArquivo) {
-		// bla bla bla
+	public void saveToFile(String nomeArquivo) {
+		// do something to save the file
 	}
 }
 ```
 
 ### Good example
 
-```js
+```java
 // Print Facture now have his own class and responsability!
 public class PrintFacture {
   private Facture facture;
@@ -68,10 +64,7 @@ public class PrintFacture {
   }
 
   public void printFacture() {
-    System.out.println(quantity + "x " + book.nome + " " + book.price + "$");
-    System.out.println("Discount percentage: " + percDiscount);
-    System.out.println("Tax percentage: " + percTax);
-    System.out.println("Total: " + total);
+		// do something to print the facture
   }
 }
 
@@ -84,7 +77,7 @@ public class SaveFacture {
   }
 
   public void saveToFile(String filename) {
-    // bla bla bla
+		// do something to save the file
   }
 }
 ```
