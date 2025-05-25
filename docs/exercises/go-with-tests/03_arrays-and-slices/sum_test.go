@@ -34,4 +34,10 @@ func TestSumAllTails(t *testing.T) {
 		want := []int{0, 13}
 		checkSums(t, got, want)
 	})
+
+	t.Run("should return 0 if there is no tail", func(t *testing.T) {
+		got := SumAllTails([]int{5}, []int{0, 9, 4})
+		want := []int{0, 13}
+		checkSums(t, got, want)
+	})
 }
