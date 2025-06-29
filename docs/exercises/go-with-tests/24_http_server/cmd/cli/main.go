@@ -1,8 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"log"
-	"net/http"
+	"os"
 
 	server "github.com/rodrigorvsn/go-with-tests/24_http_server"
 )
@@ -10,12 +11,14 @@ import (
 const dbFileName = "db.json"
 
 func main() {
+	fmt.Println("Let's play poker")
+	fmt.Println("Type {Name} wins to record a win")
+
 	store, close, err := server.FileSystemPlayerStoreFromFile(dbFileName)
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer close()
 
-	server := server.NewPlayerServer(store)
-	log.Fatal(http.ListenAndServe(":5000", server))
+	server.NewCLI(store, os.Stdin).PlayPoker()
 }
